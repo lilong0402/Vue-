@@ -14,7 +14,7 @@ const app = Vue.createApp({
                     className : '软件2232',
                     classId: 12121,
                     Time : '2022-2023-2',
-                    image : '../images/onejpeg.jpeg',
+                    image : './images/onejpeg.jpeg',
                 },
                 {
                     id : 2,
@@ -22,7 +22,7 @@ const app = Vue.createApp({
                     className : '软件2232',
                     classId: 12122,
                     Time : "2022-2023-2",
-                    image : '../images/twojpg.jpg',
+                    image : './images/twojpg.jpg',
                 },
                 {
                     id : 3,
@@ -30,10 +30,11 @@ const app = Vue.createApp({
                     className : '软件2232',
                     classId: 12123,
                     Time : '2022-2023-2',
-                    image : '../images/threejpeg.jpeg',
+                    image : './images/threejpeg.jpeg',
                 }
             ]
             // url:''
+
         }
     }
 })

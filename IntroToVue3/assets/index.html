@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    
     <link rel="stylesheet" href="./styles.css">
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
@@ -21,30 +22,27 @@
           <p v-else="Stock">Out Stock</p>
           
           <button :disabled="button<10">按钮</button>
-          
-
 
     </div>
 -->
+
 <div id="app">
     <ul  style="list-style: none;">
     
-        <div>
+        
         <li v-for="count in counts" :key="count.id" style="float: left;">
-            <div style="border: 1px solid grey; width: 200px; height: 225px; margin-right: 20px;">
+            <div style="width: 200px; height: 245px; margin-right: 20px;">
 
-                <img :src="count.image" style="width : 200px;height: 150px;">
-                <div>
+                <img :src="count.image" style="height: 150px;">
                 <p style="line-height: 5px;">&nbsp;&nbsp;{{count.courtName}}</p>
+                <p style="line-height: 5px;">&nbsp;&nbsp;班课号:{{count.classId}}</p>
                 <p style="line-height: 5px;">&nbsp;&nbsp;{{count.className}}</p>
-                <p style="line-height: 5px; color: gray;">&nbsp;&nbsp;{{count.Time}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" style="color: blue;">进入</a>
-                   <img src="../images/jt.png " style="width:15px;height:15px;">
+                <p style="line-height: 5px; color: gray;">&nbsp;&nbsp;{{count.Time}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="#" style="color: blue;">进入</a>
                 </p>
-            </div>
-            </div>
+                </div>
             
         </li>
-        </div>
     </ul>
 </div>
     <script src="./main.js"></script>
