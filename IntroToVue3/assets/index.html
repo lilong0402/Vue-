@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+
+<body>
+
+    <div id="app">
+        <h1>{{ product }}</h1>
+        <span>{{product}}</span>
+        <div class="product-image">
+            <img v-bind:src="image">
+        </div>
+          <!-- <a : href="url"></a> -->
+          <p v-if="inStock">In Stock</p>
+          <p v-if="Stock">Out Stock</p>
+    </div>
+    <script src="./main.js"></script>
+    <!-- Mount App 挂载app -->
+    <script>
+        const mountedApp = app.mount('#app')
+    </script>
+</body>
+
+</html>
